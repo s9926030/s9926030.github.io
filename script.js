@@ -87,7 +87,7 @@ $(function () { //.table1 .hat:checkbox');選擇class="hat" 就是顯示帽子
         let k = 0;
         cbList.each((idx, cb) => {
             if (cb.checked) {
-                tdList[k++].innerHTML = "<img src='"+cb.value+"'>";
+              tdList[k++].innerHTML = "<img src='"+cb.value+"'title='"+cb.title+"'>";
             }
         });
         //清空第 k ~ n 格

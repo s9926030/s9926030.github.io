@@ -45,15 +45,14 @@ input[name='show']:checked:after {
 }
 
 /*滑鼠到標題顯示圖片*/
-.titletd{
-    position: relative;
-}
 .titletd img{
     display: none;
-    position:absolute;
-    left: 50%;
-    margin-left: -60px;
-    margin-top: -2px;
+    position:fixed;
+    top: 0px;
+    right: 0px;
+    opacity:1;/*透明度*/
+    max-width: 655px;
+    max-height: 100%;
 }
 .titletd:hover img{
     display: block;

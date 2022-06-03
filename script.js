@@ -102,4 +102,7 @@ $(function () { //.table1 .hat:checkbox');選擇class="hat" 就是顯示帽子
 //延遲載入圖片
 $( "img" ).lazyload();
 
-//打勾進度條
+//顯示提示泡泡
+$(function () { $('.tooltip-show').tooltip('show');});
+$(function () { $('.tooltip-toggle').tooltip('toggle');});
+$(function () { $(".tooltip-options").tooltip({html : true });});

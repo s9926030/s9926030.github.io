@@ -54,7 +54,7 @@ input[name='show']:checked:after {
     top: 0px;
     right: 0px;
     opacity:1;/*透明度*/
-    max-width: 655px;
+    max-width: 100%;
     max-height: 100%;
 }
 .titletd:hover img{

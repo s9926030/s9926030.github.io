@@ -107,7 +107,7 @@ $(function () { $('.tooltip-show').tooltip('show');});
 $(function () { $('.tooltip-toggle').tooltip('toggle');});
 $(function () { $(".tooltip-options").tooltip({html : true });});
 
-//關閉圖示
+/*關閉圖示
 function closeimg(){
   var css = '.titletd:hover img{ display: none; }';
   var css2= '.titletd:hover img{ display: block; }';
@@ -128,3 +128,4 @@ function closeimg(){
   }
   document.getElementsByTagName('head')[0].appendChild(style);
 }
+*/

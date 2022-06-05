@@ -60,3 +60,15 @@ input[name='show']:checked:after {
 .titletd:hover img{
     display: block;
 }
+/*套組顏色*/
+.bg .checkAll_boy+b{
+    background-color: PaleTurquoise;
+}
+.bg .checkAll_girl+b{
+    background-color:LightPink;
+}
+
+/*BTS框*/
+.table2{
+    border: solid;
+}

@@ -37,8 +37,123 @@ $(function () {
       }
     }
   });
- 
 });
+//男  全選、全不選
+$(function () {
+  $(".checkAll_boy").click(function () {
+    var isCheck = $(this).prop("checked");
+    $(this).closest(".bg").find(".boy input[type='checkbox']").prop("checked", isCheck);
+  });
+  
+  $(".bg .boy input[type='checkbox']").click(function () {
+    
+  var el_checkAll = $(this).closest(".bg").find(".checkAll_boy");
+
+  var checkLength = $(this).closest(".bg").find(".boy input[type='checkbox']:checked").length;// 每區塊目前被V的有幾個
+    
+  var inputLength =$(this).closest(".bg").find(".boy input[type='checkbox']").length; // 每區塊的核取框有多少
+    
+    if (!$(this).prop("checked")) {
+      el_checkAll.prop("checked", false);
+    } else {
+      if (checkLength == inputLength) {
+          el_checkAll.prop("checked", true);
+      }
+    }
+  });
+});
+//女  全選、全不選
+$(function () {
+  $(".checkAll_girl").click(function () {
+    var isCheck = $(this).prop("checked");
+    $(this).closest(".bg").find(".girl input[type='checkbox']").prop("checked", isCheck);
+  });
+  
+  $(".bg .girl input[type='checkbox']").click(function () {
+    
+  var el_checkAll = $(this).closest(".bg").find(".checkAll_girl");
+
+  var checkLength = $(this).closest(".bg").find(".girl input[type='checkbox']:checked").length;// 每區塊目前被V的有幾個
+    
+  var inputLength =$(this).closest(".bg").find(".girl input[type='checkbox']").length; // 每區塊的核取框有多少
+    
+    if (!$(this).prop("checked")) {
+      el_checkAll.prop("checked", false);
+    } else {
+      if (checkLength == inputLength) {
+          el_checkAll.prop("checked", true);
+      }
+    }
+  });
+});
+//BTS
+;(function($)
+{
+    $.fn.checkAll = function (options)
+    {
+        var options = $.extend({
+                scope: 'form',
+                onMasterClick: null,
+                onScopeChange: null
+            }, options);
+
+        return this.each(function() {
+
+            var $master_checkbox = $(this),
+                $scope = options.scope instanceof jQuery ? options.scope : $master_checkbox.closest(options.scope);
+
+            $master_checkbox.on('click', function(e) {
+
+                if ($master_checkbox.is(':checked'))
+                    $scope.find('input[type="checkbox"]').not($master_checkbox).prop('checked', true).trigger('change');
+                else
+                    $scope.find('input[type="checkbox"]').not($master_checkbox).prop('checked', false).trigger('change');
+
+                if (typeof options.onMasterClick === 'function')
+                        options.onMasterClick($master_checkbox, $scope);
+            });
+
+            $scope.on('change', 'input[type="checkbox"]', function(e) {
+
+                var $changed_checkbox = $(this);
+
+                if ($changed_checkbox.is($master_checkbox))
+                    return;
+
+                if (typeof options.onScopeChange === 'function')
+                        options.onScopeChange($master_checkbox, $changed_checkbox, $scope);
+
+                if ( ! $changed_checkbox.is(':checked')) {
+                    $master_checkbox.prop('checked', false);
+                    return;
+                }
+
+                if ($scope.find('input[type="checkbox"]').not($master_checkbox).not(':checked').length === 0)
+                    $master_checkbox.prop('checked', true);
+                
+            });
+        });
+    };
+    
+}(jQuery));
+$('.group-a-check-all').checkAll({
+  scope: $('.group-a')
+});
+
+$('.group-b-check-all').checkAll({
+  scope: $('.group-b')
+});
+$('.group-c-check-all').checkAll({
+  scope: $('.group-c')
+});
+$('.group-d-check-all').checkAll({
+  scope: $('.group-d')
+});
+$('.group-all-check-all').checkAll({
+  scope: $('.group-all')
+});
+
+
 //儲存checkbox選項
 let boxes = document.getElementsByClassName('cbsort').length;
 

@@ -76,6 +76,11 @@ input[name='show']:checked:after {
     background-repeat: no-repeat;
     background-position:right bottom;
 }
+.float{
+    background-image: url("https://i.imgur.com/MQWRDve.png");
+    background-repeat: no-repeat;
+    background-position:right bottom;
+}
 /*套組顏色
 .bg .checkAll_boy+b{
     background-color: PaleTurquoise;

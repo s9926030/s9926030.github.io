@@ -178,7 +178,7 @@ function show_table(){
 document.getElementById("item_talbe").style.display='block';
 var m = $("[name='show']:checked").val();
 $(function () { //.table1 .hat:checkbox');選擇class="hat" 就是顯示帽子
-  let cbList = $('.table1 .'+m+':checkbox');
+  let cbList = $('.table1 .tooltip-options .'+m+':checkbox');
   /**
    * 自動計算需要幾列，並建立表格
    */

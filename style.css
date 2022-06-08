@@ -91,21 +91,18 @@ input[name='show']:checked:after {
     background-color: aquamarine;
     display :inline-block ;
     width : 46px ; height : 46px ;
-     
     vertical-align: middle;
 }
 #item_talbe .girl{
     background-color: rgb(249, 128, 167);
     display :inline-block ;
     width : 46px ; height : 46px ;
-    
     vertical-align: middle;  
 }
 #item_talbe .fly{
     background-color: rgb(151, 219, 142);
     display :inline-block ;
     width : 46px ; height : 46px ;
-      
     vertical-align: middle;
 }
 #item_talbe div{

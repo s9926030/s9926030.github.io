@@ -214,6 +214,49 @@ $(function () { //.table1 .hat:checkbox');選擇class="hat" 就是顯示帽子
   onCheckChange();
 });};
 
+
+
+function show_table2(){
+  document.getElementById("item_talbe").style.display='block';
+  var m = $("[name='show']:checked").val();
+  $(function () { //.table1 .hat:checkbox');選擇class="hat" 就是顯示帽子
+    let cbList = $('.table1 .tooltip-options .'+m+':checkbox');
+    /**
+     * 自動計算需要幾列，並建立表格
+     */
+    let nRows = cbList.length > 0 ? (cbList.length /26+1) : 0;
+    let trHtml = '<tr><th class="row-title"></td>'
+        + '<td class="text"></td>'.repeat(26)
+        + '</tr>';
+    $('div.myTable>table>tbody').html(trHtml.repeat(nRows));
+    $('.row-title').each((idx, td) => {
+        $(td).text(String(1+idx));
+    });
+  
+    /**
+     * 處理使用者變更時的事件
+     */
+    let tdList = $('.text'); //暫存寫入目標，避免每次查詢
+    let n = 0; //紀錄(上次)填寫到第幾格
+    function onCheckChange() {
+        let k = 0;
+        cbList.each((idx, cb) => {
+            if (cb.checked) {
+                tdList[k++].innerHTML = '<div class="'+cb.name+'"><img src="'+cb.value+'"title="'+cb.title+'">';
+            }
+        });
+        //清空第 k ~ n 格
+        for (let i = k; i < n; ++i) {
+          tdList[i].innerHTML = '';
+      }
+      n = k;
+    }
+    //監聽外層容器即可
+    $('.table1').on('change', onCheckChange);
+    onCheckChange();
+  });};
+
+
 //延遲載入圖片
 $( "img" ).lazyload();
 

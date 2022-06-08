@@ -81,6 +81,36 @@ input[name='show']:checked:after {
     background-repeat: no-repeat;
     background-position:right bottom;
 }
+#item_talbe td{
+    width:46px;
+    height: 46px;
+    line-height: 40px;
+    background-color: rgb(205, 207, 206);
+}
+#item_talbe .boy{
+    background-color: aquamarine;
+    display :inline-block ;
+    width : 46px ; height : 46px ;
+     
+    vertical-align: middle;
+}
+#item_talbe .girl{
+    background-color: rgb(249, 128, 167);
+    display :inline-block ;
+    width : 46px ; height : 46px ;
+    
+    vertical-align: middle;  
+}
+#item_talbe .fly{
+    background-color: rgb(151, 219, 142);
+    display :inline-block ;
+    width : 46px ; height : 46px ;
+      
+    vertical-align: middle;
+}
+#item_talbe div{
+    line-height: 44px;
+}
 /*套組顏色
 .bg .checkAll_boy+b{
     background-color: PaleTurquoise;

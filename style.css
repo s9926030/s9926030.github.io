@@ -64,22 +64,32 @@ input[name='show']:checked:after {
 .common {
     background-image: url("https://i.imgur.com/gY4OsKw.png");
     background-repeat: no-repeat;
-    background-position:right bottom;
+    background-position:right bottom 10px;
 }
 .male{
     background-image: url("https://i.imgur.com/hXc9CG1.png");
     background-repeat: no-repeat;
-    background-position:right bottom;
+    background-position:right bottom 10px;
 }
 .female{
     background-image: url("https://i.imgur.com/xVS9E1e.png");
     background-repeat: no-repeat;
-    background-position:right bottom;
+    background-position:right bottom 10px;
 }
 .float{
     background-image: url("https://i.imgur.com/MQWRDve.png");
     background-repeat: no-repeat;
-    background-position:right bottom;
+    background-position:right bottom 10px;
+}
+.color:before{
+    width: 29px;
+    height: 30px;
+    background-image: url("https://i.imgur.com/MUbFO1g.png");
+    background-repeat: no-repeat;
+    content: "";
+    display:inline-block;
+    position: relative;
+    bottom: -14px;
 }
 #item_talbe td{
     width:46px;
@@ -107,6 +117,10 @@ input[name='show']:checked:after {
 }
 #item_talbe div{
     line-height: 44px;
+}
+
+.table label{
+    height: 46px;
 }
 /*套組顏色
 .bg .checkAll_boy+b{

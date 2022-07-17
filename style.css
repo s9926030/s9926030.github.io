@@ -81,6 +81,11 @@ input[name='show']:checked:after {
     background-repeat: no-repeat;
     background-position:right bottom 10px;
 }
+.repeat {
+    background-image: url("https://i.imgur.com/vGoz68t.png");
+    background-repeat: no-repeat;
+    background-position:right bottom 15px;
+}
 .color:before{
     width: 29px;
     height: 30px;

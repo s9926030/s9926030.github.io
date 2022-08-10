@@ -58,7 +58,7 @@ input[name='show']:checked:after {
     max-height: 100%;
     z-index:2; /*圖層順序*/
 }
-.tdl img{
+.titletdl img{
     display: none;
     position:fixed;
     top: 0px;
@@ -137,6 +137,9 @@ input[name='show']:checked:after {
 
 .table label{
     height: 46px;
+}
+.boygirl{
+    background-color: bisque;
 }
 /*套組顏色
 .bg .checkAll_boy+b{

@@ -265,6 +265,22 @@ $(function () { $('.tooltip-show').tooltip('show');});
 $(function () { $('.tooltip-toggle').tooltip('toggle');});
 $(function () { $(".tooltip-options").tooltip({html : true });});
 
+//顯示隱藏物件
+function showmm(){
+  var smm = document.getElementsByClassName('showme');
+  smm[0].style.display='block';
+  smm[1].style.display='block';
+  smm[2].style.display='block';
+  smm[3].style.display='block';
+  smm[4].style.display='block';
+  smm[5].style.display='block';
+  smm[6].style.display='block';
+  smm[7].style.display='block';
+  smm[8].style.display='block';
+  smm[9].style.display='block';
+  smm[10].style.display='block';
+  smm[11].style.display='block';
+}
 /*關閉圖示
 function closeimg(){
   var css = '.titletd:hover img{ display: none; }';

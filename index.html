@@ -25,7 +25,7 @@
             <div class="container">
             搜尋：<input type="text" id="search" placeholder="請輸入關鍵字"><label style="border: 2px solid #555;border-radius: 10px;padding-left: 10px;padding-right: 10px;margin-left:20px;"><img src="https://i.imgur.com/gY4OsKw.png">共通<img src="https://i.imgur.com/hXc9CG1.png">限定男<img src="https://i.imgur.com/xVS9E1e.png">限定女<img src="https://i.imgur.com/Q5l6cxf.png">漂浮效果<img src="https://i.imgur.com/MUbFO1g.png" onclick="showmm()">可染色</label>
             <!--<h1><b>新楓之谷時尚隨機箱</b></h1>-->
-        <table class="table1">
+        <table class="table1" id="fashionbox">
             <thead>
                 <tr>
                     <th></th>
@@ -6661,7 +6661,7 @@
         </div>
 
         <!--福袋-->
-        <header>
+        <header id="luckybag">
             <div class="container">
                 <h1 id="title" class="col-lg-9"><img class="lazyload" data-src="https://i.imgur.com/MuWkOsu.png"><b>福袋</b></h1>
             </div>
@@ -7481,7 +7481,7 @@
         </div>
 
         <!--神奇服飾箱-->
-        <header>
+        <header id="fashionbox2">
             <div class="container showme" style="display: none;">
                 <h1 id="title" class="col-lg-9"><img class="lazyload" data-src="https://i.imgur.com/MN3p6Ud.png"><b>神奇服飾箱</b></h1>
             </div>
@@ -8049,7 +8049,7 @@
             </table>
         </div>
         <!--隨機箱-->
-        <header>
+        <header id="randombox">
             <div class="container showme" style="display:none ;">
                 <h1 id="title" class="col-lg-9"><img class="lazyload" data-src="https://i.imgur.com/GojoofR.png"><b>隨機箱</b></h1>
             </div>
@@ -8325,7 +8325,7 @@
             </table>
         </div>-->
         <!--活動點裝-->
-        <header>
+        <header id="activity">
             <div class="container showme" style="display:none;">
                 <h1 id="title" class="col-lg-9"><img class="lazyload" data-src="https://i.imgur.com/WF8fONE.png"><b>活動點裝</b></h1>
             </div>
@@ -11766,7 +11766,7 @@
         </div>
 
         <!--套組-->
-        <header>
+        <header id="cashset">
             <div class="container showme" style="display:none ;">
                 <h1 id="title" class="col-lg-9"><img class="lazyload" data-src="https://i.imgur.com/PcqnilN.png"><b>套組</b></h1>
             </div>
@@ -13166,7 +13166,7 @@
 
         <!--黃金馬車-->
         <header>
-            <div class="container">
+            <div class="container" id="goldcar">
                 <h1 id="title" class="col-lg-9"><img class="lazyload" data-src="https://i.imgur.com/n2QzlxM.png"><b>黃金馬車</b></h1>
             </div>
         </header>
@@ -13386,7 +13386,7 @@
                 <tr>
                     <td><span class="expandChildTable"></span></td>
                     <td>【黃金馬車6】<label style="display: none;">雪吉拉霓虹招牌披風、卡力阿因頭巾、卡力阿因妝容、卡力阿因套裝、卡力阿因鞋子、卡力阿因手套、卡力阿因披風、卡力阿因長杖</label></td>
-                    <td class="titletd">精靈兄弟的黃金馬車 2022/09/07 ~ 2023/01/10<img class="lazyload" data-src="https://i.imgur.com/ehiE8zA.png"></td>
+                    <td class="titletd">精靈兄弟的黃金馬車 2022/09/07 ~ 2023/01/10<img class="lazyload" data-src="https://i.imgur.com/p6oqib3.png"></td>
                 </tr>
                 <tr class="childTableRow">
                     <td colspan="3">
@@ -13480,7 +13480,7 @@
             </table>
         </div>
         <!--水球-->
-        <header>
+        <header id="waterball">
             <div class="container">
                 <h1 id="title" class="col-lg-9"><img class="lazyload" data-src="https://i.imgur.com/maQxNSp.png"><b>水球活動</b></h1>
             </div>
@@ -13611,7 +13611,7 @@
             </table>
         </div>
         <!--幸運紅包-->
-        <header>
+        <header id="redbag">
             <div class="container showme" style="display:none ;">
                 <h1 id="title" class="col-lg-9"><img class="lazyload" data-src="https://i.imgur.com/9bALm49.png"><b>幸運紅包</b></h1>
             </div>
@@ -13752,7 +13752,7 @@
             </table>
         </div>
         <!--里程披風-->
-        <header>
+        <header id="leecape">
             <div class="container">
                 <h1 id="title" class="col-lg-9"><img class="lazyload" data-src="https://i.imgur.com/qJLpYyq.png"><b>里程披風</b></h1>
             </div>
@@ -13904,6 +13904,16 @@
             <button name="show" onclick="show_table2()">顯示區分</button>
             <label style="background-color:rgb(205, 207, 206);border: 2px solid #555;border-radius: 10px;padding-left: 10px;padding-right: 10px;margin-left:20px;"><img src="https://i.imgur.com/f9wxo6y.png">限定男<img src="https://i.imgur.com/FZOn4EN.png">限定女<img src="https://i.imgur.com/AVVOpoq.png">漂浮效果</label>
             </div>
+            <a href="#fashionbox" style="position:fixed;bottom:190px;right:50px;display: none;" class="showme">時尚隨機箱</a>
+            <a href="#cashset" style="position:fixed;bottom:175px;right:50px;display: none;" class="showme">商城套組</a>
+            <a href="#luckybag" style="position:fixed;bottom:160px;right:50px;display: none;" class="showme">福袋</a>
+            <a href="#fashionbox2" style="position:fixed;bottom:145px;right:50px;display: none;" class="showme">神奇服飾箱</a>
+            <a href="#randombox" style="position:fixed;bottom:130px;right:50px;display: none;" class="showme">隨機箱</a>
+            <a href="#activity" style="position:fixed;bottom:115px;right:50px;display: none;" class="showme">活動點裝</a>
+            <a href="#goldcar" style="position:fixed;bottom:100px;right:50px;display: none;" class="showme">黃金馬車</a>
+            <a href="#waterball" style="position:fixed;bottom:85px;right:50px;display: none;" class="showme">水球活動</a>
+            <a href="#redbag" style="position:fixed;bottom:70px;right:50px;display: none;" class="showme">幸運紅包</a>
+            <a href="#leecape" style="position:fixed;bottom:55px;right:50px;display: none;" class="showme">里程披風</a>
             <a href="#title" style="position:fixed;bottom:40px;right:50px;">&#9650TOP</a>
             <a href="#Tablediv" style="position:fixed;bottom:25px;right:50px;" class="tooltip-show" data-toggle="tooltip" data-placement="left" title="打勾的項目會在下方表格">&#9660表格</a>
             <!--<label style="position:fixed;bottom:2px;right:0px;"><input type="checkbox" id="closeimg" onclick="closeimg()">關閉標題圖示∴手機請使用橫向觀看</label>-->

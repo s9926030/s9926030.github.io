@@ -280,6 +280,16 @@ function showmm(){
   smm[9].style.display='block';
   smm[10].style.display='block';
   smm[11].style.display='block';
+  smm[12].style.display='block';
+  smm[13].style.display='block';
+  smm[14].style.display='block';
+  smm[15].style.display='block';
+  smm[16].style.display='block';
+  smm[17].style.display='block';
+  smm[18].style.display='block';
+  smm[19].style.display='block';
+  smm[20].style.display='block';
+  smm[21].style.display='block';
 }
 /*關閉圖示
 function closeimg(){

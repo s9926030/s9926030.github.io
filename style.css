@@ -141,6 +141,9 @@ input[name='show']:checked:after {
 .boygirl{
     background-color: bisque;
 }
+.new{
+    background-color: aquamarine;
+}
 /*套組顏色
 .bg .checkAll_boy+b{
     background-color: PaleTurquoise;

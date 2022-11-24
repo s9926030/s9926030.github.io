@@ -289,7 +289,7 @@ function showmm(){
   smm[18].style.display='block';
   smm[19].style.display='block';
   smm[20].style.display='block';
-  smm[21].style.display='block';
+  
 }
 /*關閉圖示
 function closeimg(){

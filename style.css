@@ -144,6 +144,14 @@ input[name='show']:checked:after {
 .new{
     background-color: aquamarine;
 }
+.showme{
+    display: none;
+}
+.quicklylink{
+    position: fixed;
+    right:0px;
+    
+}
 /*套組顏色
 .bg .checkAll_boy+b{
     background-color: PaleTurquoise;

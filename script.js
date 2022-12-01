@@ -291,6 +291,25 @@ function showmm(){
   smm[20].style.display='block';
   
 }
+window.onscroll = function() {scrollFunction()};
+
+
+function scrollFunction() {
+  var quicklylink = document.getElementsByClassName('quicklylink');
+  var newimg = document.getElementById('newimg');
+  const Tablediv = document.getElementById('Tablediv');
+  let x = Tablediv.offsetTop-500;
+  
+  for(var i = 0;i<quicklylink.length;i++){
+  if (document.body.scrollTop > x || document.documentElement.scrollTop > x) {
+    quicklylink[i].style.fontSize = "0px";
+    newimg.style.display="none";
+  } else {
+    quicklylink[i].style.fontSize = "14px";
+  }
+  
+}
+}
 /*關閉圖示
 function closeimg(){
   var css = '.titletd:hover img{ display: none; }';

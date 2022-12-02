@@ -289,6 +289,8 @@ function showmm(){
   smm[18].style.display='block';
   smm[19].style.display='block';
   smm[20].style.display='block';
+  smm[21].style.display='block';
+  smm[22].style.display='block';
   
 }
 window.onscroll = function() {scrollFunction()};
@@ -297,6 +299,7 @@ window.onscroll = function() {scrollFunction()};
 function scrollFunction() {
   var quicklylink = document.getElementsByClassName('quicklylink');
   var newimg = document.getElementById('newimg');
+  var newimg2 = document.getElementById('newimg2');
   const Tablediv = document.getElementById('Tablediv');
   let x = Tablediv.offsetTop-500;
   
@@ -304,6 +307,7 @@ function scrollFunction() {
   if (document.body.scrollTop > x || document.documentElement.scrollTop > x) {
     quicklylink[i].style.fontSize = "0px";
     newimg.style.display="none";
+    newimg2.style.display="none";
   } else {
     quicklylink[i].style.fontSize = "14px";
   }

@@ -273,9 +273,6 @@ function showmm(){
   smm[2].style.display='block';
   smm[3].style.display='block';
   smm[4].style.display='block';
-  smm[5].style.display='block';
-  smm[6].style.display='block';
-  
 }
 window.onscroll = function() {scrollFunction()};
 

@@ -275,23 +275,6 @@ function showmm(){
   smm[4].style.display='block';
   smm[5].style.display='block';
   smm[6].style.display='block';
-  smm[7].style.display='block';
-  smm[8].style.display='block';
-  smm[9].style.display='block';
-  smm[10].style.display='block';
-  smm[11].style.display='block';
-  smm[12].style.display='block';
-  smm[13].style.display='block';
-  smm[14].style.display='block';
-  smm[15].style.display='block';
-  smm[16].style.display='block';
-  smm[17].style.display='block';
-  smm[18].style.display='block';
-  smm[19].style.display='block';
-  smm[20].style.display='block';
-  smm[21].style.display='block';
-  smm[22].style.display='block';
-  smm[23].style.display='block';
   
 }
 window.onscroll = function() {scrollFunction()};

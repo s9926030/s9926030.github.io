@@ -268,11 +268,7 @@ $(function () { $(".tooltip-options").tooltip({html : true });});
 //顯示隱藏物件
 function showmm(){
   var smm = document.getElementsByClassName('showme');
-  smm[0].style.display='block';
-  smm[1].style.display='block';
-  smm[2].style.display='block';
-  smm[3].style.display='block';
-  smm[4].style.display='block';
+  //smm[0].style.display='block';
 }
 window.onscroll = function() {scrollFunction()};
 
@@ -291,6 +287,7 @@ function scrollFunction() {
     newimg2.style.display="none";
   } else {
     quicklylink[i].style.fontSize = "14px";
+    newimg2.style.display="block";
   }
   
 }

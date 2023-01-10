@@ -283,7 +283,7 @@ function scrollFunction() {
   for(var i = 0;i<quicklylink.length;i++){
   if (document.body.scrollTop > x || document.documentElement.scrollTop > x) {
     quicklylink[i].style.fontSize = "0px";
-    newimg.style.display="none";
+    
     newimg2.style.display="none";
   } else {
     quicklylink[i].style.fontSize = "14px";

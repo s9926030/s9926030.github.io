@@ -284,15 +284,15 @@ function scrollFunction() {
   if (document.body.scrollTop > x || document.documentElement.scrollTop > x) {
     quicklylink[i].style.fontSize = "0px";
     
-    newimg2.style.display="none";
+    //newimg2.style.display="none";
   } else {
     quicklylink[i].style.fontSize = "14px";
-    newimg2.style.display="block";
+    //newimg2.style.display="block";
   }
   
 }
 }
-/*關閉圖示
+關閉圖示
 function closeimg(){
   var css = '.titletd:hover img{ display: none; }';
   var css2= '.titletd:hover img{ display: block; }';
@@ -313,4 +313,3 @@ function closeimg(){
   }
   document.getElementsByTagName('head')[0].appendChild(style);
 }
-*/

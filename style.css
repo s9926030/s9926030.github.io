@@ -324,4 +324,9 @@ ul.drop-down-new ul {
 #totop a:hover {
     background: url("https://imgur.com/uaxTLfD.png"); /*滑鼠移過顯示圖片*/
 }
-    
+#bby{
+    background: url("https://imgur.com/2IJQYfx.png");
+    /*background-repeat: no-repeat;*/
+    background-size: 3%;
+    opacity:1;/*透明度*/
+}

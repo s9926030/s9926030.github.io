@@ -182,7 +182,7 @@ ul {
     display: inline-block;
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 14px;
-    top:93%;    /*選單位置*/
+    top:15px;    /*選單位置*/
     right:6px;
   }
   
@@ -227,7 +227,7 @@ ul {
     position: absolute;
     z-index: 99;
     left: -110px;   /*下拉選單位置*/
-    top: -344px;
+    top: 0px;
     min-width: 110px;
   }
   
@@ -262,7 +262,7 @@ ul.drop-down-new {
     font-family: 'Open Sans', Arial, sans-serif;
     font-size: 15px;
     position: fixed;
-    bottom:65px;
+    top:50px;
     right:3px;
 }
 ul.drop-down-new li {
@@ -308,7 +308,7 @@ ul.drop-down-new ul {
     position: absolute;
     z-index: 99;
     left: -175px;   /*下拉選單位置*/
-    top: -38px;
+    top: 0px;
     min-width: 110px;
   }
 
@@ -318,9 +318,11 @@ ul.drop-down-new ul {
     font-size: 0; 
     height: 20px;/*圖片高度*/
     width: 30px;/*圖片寬度*/
-    bottom:105px;
+    bottom:55px;
     right:5px;
 }
 #totop a:hover {
     background: url("https://imgur.com/uaxTLfD.png"); /*滑鼠移過顯示圖片*/
 }
+    
+    

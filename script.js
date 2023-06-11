@@ -313,3 +313,16 @@ function closeimg(){
   }
   document.getElementsByTagName('head')[0].appendChild(style);
 }
+//統計打勾數量
+function show_itemsnumber(){
+  var chb = document.querySelectorAll('input[type=checkbox]');//5489
+  var chball = document.querySelectorAll('input[name=inputallbox]');//701
+  var checkboxeschecked = document.querySelectorAll('input[type=checkbox]:checked');
+  var checkboxesallchecked = document.querySelectorAll('input[name=inputallbox]:checked');
+  var checkboxall = chb.length-chball.length;//正確是4788
+  var howmany = checkboxeschecked.length-checkboxesallchecked.length;
+  console.log(howmany);
+  document.getElementById("showitemnumber").innerHTML = howmany + " / "+checkboxall;
+}
+window.onload =show_itemsnumber();
+$('.table1').on('change', show_itemsnumber);

@@ -334,7 +334,7 @@ ul.drop-down-next > li {
     float: left; /* 只有第一層是靠左對齊*/
 }
 
- ul.drop-down-next a {
+ul.drop-down-next a {
     background-color: #fff;
     color: #333;
     display: block;

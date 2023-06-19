@@ -306,7 +306,7 @@ ul.drop-down-new ul {
     border: #ccc 1px solid;
     position: absolute;
     z-index: 99;
-    left: -175px;   /*下拉選單位置*/
+    left: -158px;   /*下拉選單位置*/
     top: 0px;
     min-width: 110px;
   }
@@ -361,7 +361,7 @@ ul.drop-down-next ul {
     border: #ccc 1px solid;
     position: absolute;
     z-index: 99;
-    left: -105px;   /*下拉選單位置*/
+    left: -95px;   /*下拉選單位置*/
     top: 0px;
     min-width: 110px;
   }

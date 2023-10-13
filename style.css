@@ -152,8 +152,9 @@ input[name='show']:checked:after {
 }
 .next{
     background-image: url('https://i.imgur.com/BddsOhM.png');
+    background-color: khaki;
     background-repeat: no-repeat;
-    background-position: 55% 50%;
+    background-position: 90% 50%;
 }
 /*套組顏色
 .bg .checkAll_boy+b{

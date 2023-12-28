@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1004202,
+        "image": "https://i.imgur.com/RYHtdYX.png",
+        "name": "幻影死神頭盔",
+        "class": "hat",
+        "gender": "common"
+    },
+    {
+        "id": 1052774,
+        "image": "https://i.imgur.com/55CzYlG.png",
+        "name": "幻影死神盔甲",
+        "class": "overall",
+        "gender": "common"
+    },
+    {
+        "id": 1072945,
+        "image": "https://i.imgur.com/kFGl2MS.png",
+        "name": "幻影死神靴子",
+        "class": "shoe",
+        "gender": "common"
+    },
+    {
+        "id": 1082591,
+        "image": "https://i.imgur.com/kFbWDhK.png",
+        "name": "幻影死神護腕",
+        "class": "glove",
+        "gender": "common"
+    },
+    {
+        "id": 1004201,
+        "image": "https://i.imgur.com/vIcKfkj.png",
+        "name": "毀滅騎士",
+        "class": "hat",
+        "gender": "common"
+    }
+    ,
+    {
+        "id": 1052773,
+        "image": "https://i.imgur.com/YKeDaUx.png",
+        "name": "毀滅騎士禮服",
+        "class": "overall",
+        "gender": "common"
+    },
+    {
+        "id": 1072944,
+        "image": "https://i.imgur.com/EQ1llp8.png",
+        "name": "毀滅騎士長靴",
+        "class": "shoe",
+        "gender": "common"
+    }
+]

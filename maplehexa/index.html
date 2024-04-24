@@ -9,35 +9,33 @@
 </head>
 
 <body>
-    <img src="https://imgur.com/WLtRnwf.png"><img src="https://imgur.com/WLtRnwf.png"><br>
-    <input id="skill1" style="position: absolute;top:180px;left:187px;width: 50px;text-align: center;">
-    <input id="jinton1" style="position: absolute;top:180px;left:285px;width: 50px;text-align: center;">
-    <!--input id="jinton2" style="position: absolute;top:180px;left:285px;width: 50px;"-->
+    <img src="https://imgur.com/62z9sQu.png"><br>
+    <input id="skill1" style="position: absolute;top:180px;left:187px;width: 50px;text-align: center;" placeholder="請輸入">
+    <input id="jinton1" style="position: absolute;top:180px;left:285px;width: 50px;text-align: center;" placeholder="請輸入">
     <b id="jinton2" style="position: absolute;top:120px;left:317px;color:antiquewhite;">6月開放</b>
-    <input id="strong1" style="position: absolute;top:323px;left:187px;width: 50px;text-align: center;">
-    <input id="strong2" style="position: absolute;top:383px;left:152px;width: 50px;text-align: center;">
-    <input id="strong3" style="position: absolute;top:383px;left:82px;width: 50px;text-align: center;">
-    <input id="strong4" style="position: absolute;top:443px;left:47px;width: 50px;text-align: center;">
-    <!--input id="konton1" style="position: absolute;top:323px;left:285px;width: 50px;"-->
+    <input id="strong1" style="position: absolute;top:323px;left:187px;width: 50px;text-align: center;" placeholder="請輸入">
+    <input id="strong2" style="position: absolute;top:383px;left:152px;width: 50px;text-align: center;" placeholder="請輸入">
+    <input id="strong3" style="position: absolute;top:383px;left:82px;width: 50px;text-align: center;" placeholder="請輸入">
+    <input id="strong4" style="position: absolute;top:443px;left:47px;width: 50px;text-align: center;" placeholder="請輸入">
     <b id="konton1" style="position: absolute;top:323px;left:282px;color:antiquewhite;">6月開放</b>
+    <button onclick="go()" style="position: absolute;top:475px;left:238px;">計算</button><br>
     <b style="position: absolute;top:497px;left:80px;">碎片進度：</b>
     <progress max="20184" value="0" id="vvv" style="position: absolute;top:500px;left:160px;"></progress>
     <b id="ooo1" style="position: absolute;top:500px;left:375px;"></b><span id="ooo2"></span>
-    <button onclick="go()" style="position: absolute;top:475px;left:238px;">計算</button><br>
-    <b style="position: absolute;top:517px;left:80px;">碎片總消耗量：</b><b id="all" style="position: absolute;top:519px;left:190px;"></b><br>
-    <b style="position: absolute;top:497px;left:695px;">還需碎片數量：</b><b id="all2" style="position: absolute;top:499px;left:805px;"></b><br>
+    <b style="position: absolute;top:517px;left:80px;">碎片總消耗量：</b><b id="all" style="position: absolute;top:517px;left:190px;"></b><br>
+    <b style="position: absolute;top:497px;left:695px;">還需碎片數量：</b><b id="all2" style="position: absolute;top:497px;left:805px;"></b><br>
     <b id="no2" style="position: absolute;top:559px;left:712px;"></b>
-    <b id="skill1c" style="position: absolute;top:181px;left:702px;color:antiquewhite;"></b>
-    <b id="jinton1c" style="position: absolute;top:181px;left:800px;color:antiquewhite;"></b>
-    <b id="jinton2c" style="position: absolute;top:121px;left:835px;color:antiquewhite;">2252</b>
-    <b id="strong1c" style="position: absolute;top:324px;left:702px;color:antiquewhite;"></b>
-    <b id="strong2c" style="position: absolute;top:384px;left:667px;color:antiquewhite;"></b>
-    <b id="strong3c" style="position: absolute;top:384px;left:597px;color:antiquewhite;"></b>
-    <b id="strong4c" style="position: absolute;top:444px;left:562px;color:antiquewhite;"></b>
+    <b id="skill1c" style="position: absolute;top:180px;left:702px;color:antiquewhite;"></b>
+    <b id="jinton1c" style="position: absolute;top:180px;left:800px;color:antiquewhite;"></b>
+    <b id="jinton2c" style="position: absolute;top:120px;left:835px;color:antiquewhite;">2252</b>
+    <b id="strong1c" style="position: absolute;top:323px;left:702px;color:antiquewhite;"></b>
+    <b id="strong2c" style="position: absolute;top:383px;left:667px;color:antiquewhite;"></b>
+    <b id="strong3c" style="position: absolute;top:383px;left:597px;color:antiquewhite;"></b>
+    <b id="strong4c" style="position: absolute;top:443px;left:562px;color:antiquewhite;"></b>
     <b id="konton1" style="position: absolute;top:324px;left:800px;color:antiquewhite;">6268</b>
+    <b style="position: absolute;top:252.5px;left:140px;background-color: black;color: antiquewhite;">&emsp;&emsp;請在格子內輸入技能等級&emsp;&emsp;</b>
     <b style="position: absolute;top:252.5px;left:640px;background-color: black;color: antiquewhite;">&emsp;&emsp;各技能距離滿等還需碎片數&emsp;&emsp;</b>
-    <b style="position: absolute;top:517px;left:625px;">加上共通I、精通II還需碎片數量：</b><b id="all2" style="position: absolute;top:499px;left:805px;"></b>
-    <b id="no1"style="position: absolute;top:519px;left:870px;"></b>
+    <b style="position: absolute;top:517px;left:625px;">加上共通I、精通II還需碎片數量：</b><b id="no1"style="position: absolute;top:517px;left:870px;"></b>
     <div id="hexa666" style="display: none;">
         <label>技能核心：等級</label><br>
         <label>消耗碎片數量：</label><span id="skill1b"></span><label><br>

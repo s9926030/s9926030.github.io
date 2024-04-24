@@ -1,0 +1,49 @@
+<html lang="zh-TW"><head>
+    
+    <meta charset="UTF-8">
+    <style>
+        progress {
+            width: 210px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="hexa666">
+    <label>技能核心：等級</label><input id="skill"><br>
+    &emsp;&emsp;<label>消耗碎片數量：</label><span id="skill2"></span><label><br>
+        &emsp;&emsp;距離滿等還缺：</label><span id="skill3"></span><label>個碎片</label><br>
+    <label>精通核心：等級</label><input id="jinton"><br>
+    &emsp;&emsp;<label>消耗碎片數量：</label><span id="jinton2"></span><label><br>
+        &emsp;&emsp;距離滿等還缺：</label><span id="jinton3"></span><label>個碎片</label><br>
+    <label>強化核心1：等級</label><input id="strong1"><br>
+    &emsp;&emsp;<label>消耗碎片數量：</label><span id="strong12"></span><label><br>
+        &emsp;&emsp;距離滿等還缺：</label><span id="strong13"></span><label>個碎片</label><br>
+    <label>強化核心2：等級</label><input id="strong2"><br>
+    &emsp;&emsp;<label>消耗碎片數量：</label><span id="strong22"></span><label><br>
+        &emsp;&emsp;距離滿等還缺：</label><span id="strong23"></span><label>個碎片</label><br>
+    <label>強化核心3：等級</label><input id="strong3"><br>
+    &emsp;&emsp;<label>消耗碎片數量：</label><span id="strong32"></span><label><br>
+        &emsp;&emsp;距離滿等還缺：</label><span id="strong33"></span><label>個碎片</label><br>
+    <label>強化核心4：等級</label><input id="strong4"><br>
+    &emsp;&emsp;<label>消耗碎片數量：</label><span id="strong42"></span><label><br>
+        &emsp;&emsp;距離滿等還缺：</label><span id="strong43"></span><label>個碎片</label><br><br>
+    
+        
+        <label>碎片進度：</label>
+    <progress max="20184" value="0" id="vvv"></progress>
+    <span id="ooo1"></span><span id="ooo2"></span>
+
+        <br>
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<button onclick="go()">計算</button><br>
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label>碎片總消耗量：</label><span id="all"></span><br>
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<label>還需碎片數量：</label><span id="all2"></span><br>
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span id="no1"></span><br>
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<span id="no2"></span>
+</div>
+
+
+<script src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</body></html>

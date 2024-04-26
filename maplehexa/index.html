@@ -9,33 +9,34 @@
     </head>
 
 <body>
-    <img src="https://imgur.com/IQCr0BD.png" alt="hexa"><br>
-    <input id="skill1" style="position: absolute;top:180px;left:187px;width: 50px;text-align: center;" placeholder="請輸入">
-    <input id="jinton1" style="position: absolute;top:180px;left:285px;width: 50px;text-align: center;" placeholder="請輸入">
-    <b id="jinton2" style="position: absolute;top:120px;left:317px;color:antiquewhite;">6月開放</b>
-    <input id="strong1" style="position: absolute;top:323px;left:187px;width: 50px;text-align: center;" placeholder="請輸入">
-    <input id="strong2" style="position: absolute;top:383px;left:152px;width: 50px;text-align: center;" placeholder="請輸入">
-    <input id="strong3" style="position: absolute;top:383px;left:82px;width: 50px;text-align: center;" placeholder="請輸入">
-    <input id="strong4" style="position: absolute;top:443px;left:47px;width: 50px;text-align: center;" placeholder="請輸入">
-    <b id="konton1" style="position: absolute;top:323px;left:282px;color:antiquewhite;">6月開放</b>
-    <button onclick="go()" style="position: absolute;top:475px;left:238px;">計算</button><br>
-    <b style="position: absolute;top:497px;left:80px;">碎片進度：</b>
-    <progress max="20184" value="0" id="vvv" style="position: absolute;top:500px;left:160px;"></progress>
-    <b id="ooo1" style="position: absolute;top:500px;left:375px;"></b><span id="ooo2"></span>
-    <b style="position: absolute;top:517px;left:80px;">碎片總消耗量：</b><b id="all" style="position: absolute;top:517px;left:190px;"></b><br>
-    <b style="position: absolute;top:497px;left:695px;">還需碎片數量：</b><b id="all2" style="position: absolute;top:497px;left:805px;"></b><br>
-    <b id="no2" style="position: absolute;top:559px;left:712px;"></b>
-    <b id="skill1c" style="position: absolute;top:180px;left:702px;color:antiquewhite;"></b>
-    <b id="jinton1c" style="position: absolute;top:180px;left:800px;color:antiquewhite;"></b>
-    <b id="jinton2c" style="position: absolute;top:120px;left:835px;color:antiquewhite;">2252</b>
-    <b id="strong1c" style="position: absolute;top:323px;left:702px;color:antiquewhite;"></b>
-    <b id="strong2c" style="position: absolute;top:383px;left:667px;color:antiquewhite;"></b>
-    <b id="strong3c" style="position: absolute;top:383px;left:597px;color:antiquewhite;"></b>
-    <b id="strong4c" style="position: absolute;top:443px;left:562px;color:antiquewhite;"></b>
-    <b id="konton1" style="position: absolute;top:324px;left:800px;color:antiquewhite;">6268</b>
-    <b style="position: absolute;top:252.5px;left:140px;background-color: black;color: antiquewhite;">&emsp;&emsp;請在格子內輸入技能等級&emsp;&emsp;</b>
-    <b style="position: absolute;top:252.5px;left:640px;background-color: black;color: antiquewhite;">&emsp;&emsp;各技能距離滿等還需碎片數&emsp;&emsp;</b>
-    <b style="position: absolute;top:517px;left:625px;">加上共通I、精通II還需碎片數量：</b><b id="no1"style="position: absolute;top:517px;left:870px;"></b>
+    <img src="https://imgur.com/DfMr8Ja.png" alt="hexa"><br>
+    <input id="skill1" style="position: absolute;top:150px;left:154.5px;width: 50px;text-align: center;" placeholder="請輸入">
+    <input id="jinton1" style="position: absolute;top:150px;left:252.5px;width: 50px;text-align: center;" placeholder="請輸入">
+    <b id="jinton2" style="position: absolute;top:85px;left:287.5px;color:antiquewhite;text-align: center;display:block;">預計<br>6月開放</b>
+    <input id="strong1" style="position: absolute;top:294px;left:154.5px;width: 50px;text-align: center;" placeholder="請輸入">
+    <input id="strong2" style="position: absolute;top:354px;left:119.5px;width: 50px;text-align: center;" placeholder="請輸入">
+    <input id="strong3" style="position: absolute;top:354px;left:49.5px;width: 50px;text-align: center;" placeholder="請輸入">
+    <input id="strong4" style="position: absolute;top:414px;left:14.5px;width: 50px;text-align: center;" placeholder="請輸入">
+    <b id="konton1" style="position: absolute;top:289px;left:252.5px;color:antiquewhite;text-align: center;display:block;">預計<br>6月開放</b>
+    <button onclick="go()" style="position: absolute;top:445px;left:209px;"><b>計算</b></button><br>
+    <b style="position: absolute;top:467px;left:52px;">碎片進度：</b>
+    <progress max="20184" value="0" id="vvv" style="position: absolute;top:470px;left:132px;"></progress>
+    <b id="ooo1" style="position: absolute;top:470px;left:347px;"></b><span id="ooo2"></span>
+    <b id="skill1c" style="position: absolute;top:170px;left:158px;color:antiquewhite;width: 50px;text-align: center;"></b>
+    <b id="jinton1c" style="position: absolute;top:170px;left:256px;color:antiquewhite;width: 50px;text-align: center;"></b>
+    <b id="jinton2c" style="position: absolute;top:95px;left:285px;color:antiquewhite;width: 64px;text-align: center;display:none;">2252碎片</b>
+    <b id="strong1c" style="position: absolute;top:314px;left:158px;color:antiquewhite;width: 50px;text-align: center;"></b>
+    <b id="strong2c" style="position: absolute;top:374px;left:123px;color:antiquewhite;width: 50px;text-align: center;"></b>
+    <b id="strong3c" style="position: absolute;top:374px;left:53px;color:antiquewhite;width: 50px;text-align: center;"></b>
+    <b id="strong4c" style="position: absolute;top:434px;left:18px;color:antiquewhite;width: 50px;text-align: center;"></b>
+    <b id="konton1c" style="position: absolute;top:300px;left:250px;color:antiquewhite;width: 64px;text-align: center;display:none;">6268碎片</b>
+    <b style="position: absolute;top:487px;left:52px;">碎片總消耗量：</b><b id="all" style="position: absolute;top:487px;left:162px;"></b><br>
+    <b style="position: absolute;top:507px;left:52px;">還需碎片數量：</b><b id="all2" style="position: absolute;top:507px;left:162px;"></b><br>
+    <b style="position: absolute;top:527px;left:52px;">加上&ensp;共通I、精通II&ensp;還需碎片數量：</b><b id="no1"style="position: absolute;top:527px;left:309px;"></b>
+    <b id="no2" style="position: absolute;top:659px;left:312px;"></b>
+    <b style="position: absolute;top:185px;left:491px;color: antiquewhite;">使用說明</b>
+    <b style="position: absolute;top:213px;left:467px;background-color: black;color: antiquewhite;border-style:solid;border-radius: 5px;">&ensp;輸入技能等級&ensp;</b>
+    <b style="position: absolute;top:245px;left:460px;color: antiquewhite;">&ensp;滿等還需碎片數&ensp;</b>
     <div id="hexa666" style="display: none;">
         <label>技能核心：等級</label><br>
         <label>消耗碎片數量：</label><span id="skill1b"></span><label><br>

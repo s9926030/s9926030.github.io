@@ -130,8 +130,11 @@ function go() {
         document.getElementById("skill1b").innerHTML = 4400;
         document.getElementById("skill1c").innerHTML = 4400 - 4400;
     }
-    if (skilv > 30||skilv<0) {
+    if (skilv >-1 & skilv<31) {
+        document.getElementById("skill1c").style.color = "antiquewhite";
+    }else{
         document.getElementById("skill1c").innerHTML = "請更正";
+        document.getElementById("skill1c").style.color = "red";
     }
 
 
@@ -259,8 +262,11 @@ function go() {
         document.getElementById("jinton1b").innerHTML = 2252;
         document.getElementById("jinton1c").innerHTML = 2252 - 2252;
     }
-    if (jinlv > 30||jinlv<0) {
+    if (jinlv >-1 & jinlv<31) {
+        document.getElementById("jinton1c").style.color = "antiquewhite";
+    }else{
         document.getElementById("jinton1c").innerHTML = "請更正";
+        document.getElementById("jinton1c").style.color = "red";
     }
 
 
@@ -388,9 +394,13 @@ function go() {
         document.getElementById("strong1b").innerHTML = 3383;
         document.getElementById("strong1c").innerHTML = 3383 - 3383;
     }
-    if (str1lv > 30||str1lv<0) {
+    if (str1lv >-1 & str1lv<31) {
+        document.getElementById("strong1c").style.color = "antiquewhite";
+    }else{
         document.getElementById("strong1c").innerHTML = "請更正";
+        document.getElementById("strong1c").style.color = "red";
     }
+
     if (str2lv == 0) {
         document.getElementById("strong2b").innerHTML = 0;
         document.getElementById("strong2c").innerHTML = 3383 - 0;
@@ -518,6 +528,12 @@ function go() {
     if (str2lv > 30||str2lv<0) {
         document.getElementById("strong2c").innerHTML = "請更正";
     }
+    if (str2lv >-1 & str2lv<31) {
+        document.getElementById("strong2c").style.color = "antiquewhite";
+    }else{
+        document.getElementById("strong2c").innerHTML = "請更正";
+        document.getElementById("strong2c").style.color = "red";
+    }
 
     if (str3lv == 0) {
         document.getElementById("strong3b").innerHTML = 0;
@@ -643,9 +659,13 @@ function go() {
         document.getElementById("strong3b").innerHTML = 3383;
         document.getElementById("strong3c").innerHTML = 3383 - 3383;
     }
-    if (str3lv > 30||str3lv<0) {
+    if (str3lv >-1 & str3lv<31) {
+        document.getElementById("strong3c").style.color = "antiquewhite";
+    }else{
         document.getElementById("strong3c").innerHTML = "請更正";
+        document.getElementById("strong3c").style.color = "red";
     }
+
     if (str4lv == 0) {
         document.getElementById("strong4b").innerHTML = 0;
         document.getElementById("strong4c").innerHTML = 3383 - 0;
@@ -772,6 +792,13 @@ function go() {
     }
     if (str4lv > 30||str4lv<0) {
         document.getElementById("strong4c").innerHTML = "請更正";
+        document.getElementById("strong4c").style.color = "red";
+    }
+    if (str4lv >-1 & str4lv<31) {
+        document.getElementById("strong4c").style.color = "antiquewhite";
+    }else{
+        document.getElementById("strong4c").innerHTML = "請更正";
+        document.getElementById("strong4c").style.color = "red";
     }
     var sn1 = parseInt($("#skill1b").html());
     var jn1 = parseInt($("#jinton1b").html());

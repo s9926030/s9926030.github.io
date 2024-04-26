@@ -130,6 +130,9 @@ function go() {
         document.getElementById("skill1b").innerHTML = 4400;
         document.getElementById("skill1c").innerHTML = 4400 - 4400;
     }
+    if (skilv > 30||skilv<0) {
+        document.getElementById("skill1c").innerHTML = "請更正";
+    }
 
 
     if (jinlv == 0) {
@@ -255,6 +258,9 @@ function go() {
     if (jinlv == 30) {
         document.getElementById("jinton1b").innerHTML = 2252;
         document.getElementById("jinton1c").innerHTML = 2252 - 2252;
+    }
+    if (jinlv > 30||jinlv<0) {
+        document.getElementById("jinton1c").innerHTML = "請更正";
     }
 
 
@@ -382,7 +388,9 @@ function go() {
         document.getElementById("strong1b").innerHTML = 3383;
         document.getElementById("strong1c").innerHTML = 3383 - 3383;
     }
-
+    if (str1lv > 30||str1lv<0) {
+        document.getElementById("strong1c").innerHTML = "請更正";
+    }
     if (str2lv == 0) {
         document.getElementById("strong2b").innerHTML = 0;
         document.getElementById("strong2c").innerHTML = 3383 - 0;
@@ -507,7 +515,9 @@ function go() {
         document.getElementById("strong2b").innerHTML = 3383;
         document.getElementById("strong2c").innerHTML = 3383 - 3383;
     }
-
+    if (str2lv > 30||str2lv<0) {
+        document.getElementById("strong2c").innerHTML = "請更正";
+    }
 
     if (str3lv == 0) {
         document.getElementById("strong3b").innerHTML = 0;
@@ -633,7 +643,9 @@ function go() {
         document.getElementById("strong3b").innerHTML = 3383;
         document.getElementById("strong3c").innerHTML = 3383 - 3383;
     }
-
+    if (str3lv > 30||str3lv<0) {
+        document.getElementById("strong3c").innerHTML = "請更正";
+    }
     if (str4lv == 0) {
         document.getElementById("strong4b").innerHTML = 0;
         document.getElementById("strong4c").innerHTML = 3383 - 0;
@@ -758,6 +770,9 @@ function go() {
         document.getElementById("strong4b").innerHTML = 3383;
         document.getElementById("strong4c").innerHTML = 3383 - 3383;
     }
+    if (str4lv > 30||str4lv<0) {
+        document.getElementById("strong4c").innerHTML = "請更正";
+    }
     var sn1 = parseInt($("#skill1b").html());
     var jn1 = parseInt($("#jinton1b").html());
     var stn1 = parseInt($("#strong1b").html());
@@ -780,7 +795,10 @@ function go() {
         document.getElementById("ooo1").innerHTML = x.toFixed(2)+"%";
     var vvv2 = document.getElementById("vvv");
     vvv2.setAttribute('value',alln1);
-
+    document.getElementById("jinton2").style.display="none";
+    document.getElementById("konton1").style.display="none";
+    document.getElementById("jinton2c").style.display="block";
+    document.getElementById("konton1c").style.display="block";
     
     document.getElementById("no2").innerHTML = "惡魔品質製";
 }

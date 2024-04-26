@@ -790,10 +790,6 @@ function go() {
         document.getElementById("strong4b").innerHTML = 3383;
         document.getElementById("strong4c").innerHTML = 3383 - 3383;
     }
-    if (str4lv > 30||str4lv<0) {
-        document.getElementById("strong4c").innerHTML = "請更正";
-        document.getElementById("strong4c").style.color = "red";
-    }
     if (str4lv >-1 & str4lv<31) {
         document.getElementById("strong4c").style.color = "antiquewhite";
     }else{

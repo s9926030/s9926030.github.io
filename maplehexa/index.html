@@ -4,39 +4,130 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
             <style>
-                progress {width: 210px;}
+                progress {
+                    width: 210px;
+                }
+                .shape-ex5{
+                    width: 66px;
+                    height: 38px;
+                    background-color: #666;
+                    display: block;
+                    position: relative;
+                    margin: 25px 0;
+                }
+                .shape-ex5::before{
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    display: block;
+                    border-left: 33px solid transparent;
+                    border-bottom: 19px solid #666;
+                    border-right: 33px solid transparent;
+                    position: absolute;
+                    bottom: 100%;
+                    left: 0;
+                }
+                .shape-ex5::after{
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    display: block;
+                    border-left: 33px solid transparent;
+                    border-top: 19px solid #666;
+                    border-right: 33px solid transparent;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                }
+                .shape-ex6{
+                    width: 198px;
+                    height: 114px;
+                    background-color: #666;
+                    display: block;
+                    position: relative;
+                    margin: 25px 0;
+                }
+                .shape-ex6::before{
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    display: block;
+                    border-left: 99px solid transparent;
+                    border-bottom: 57px solid #666;
+                    border-right: 99px solid transparent;
+                    position: absolute;
+                    bottom: 100%;
+                    left: 0;
+                }
+                .shape-ex6::after{
+                    content: '';
+                    width: 0;
+                    height: 0;
+                    display: block;
+                    border-left: 99px solid transparent;
+                    border-top: 57px solid #666;
+                    border-right: 99px solid transparent;
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                }
             </style>
     </head>
 
 <body>
-    <img src="https://imgur.com/DfMr8Ja.png" alt="hexa" width="584px" height="464px"><br>
-    <input id="skill1" style="position: absolute;top:150px;left:154.5px;width: 50px;text-align: center;" placeholder="請輸入" oninput="value=value.replace(/[^\d]/g,'')" inputmode="numeric">
-    <input id="jinton1" style="position: absolute;top:150px;left:252.5px;width: 50px;text-align: center;" placeholder="請輸入" oninput="value=value.replace(/[^\d]/g,'')" inputmode="numeric">
-    <b id="jinton2" style="position: absolute;top:85px;left:287.5px;color:antiquewhite;text-align: center;display:block;">預計<br>6月開放</b>
-    <input id="strong1" style="position: absolute;top:294px;left:154.5px;width: 50px;text-align: center;" placeholder="請輸入" oninput="value=value.replace(/[^\d]/g,'')" inputmode="numeric">
-    <input id="strong2" style="position: absolute;top:354px;left:119.5px;width: 50px;text-align: center;" placeholder="請輸入" oninput="value=value.replace(/[^\d]/g,'')" inputmode="numeric">
-    <input id="strong3" style="position: absolute;top:354px;left:49.5px;width: 50px;text-align: center;" placeholder="請輸入" oninput="value=value.replace(/[^\d]/g,'')" inputmode="numeric">
-    <input id="strong4" style="position: absolute;top:414px;left:14.5px;width: 50px;text-align: center;" placeholder="請輸入" oninput="value=value.replace(/[^\d]/g,'')" inputmode="numeric">
-    <b id="konton1" style="position: absolute;top:289px;left:252.5px;color:antiquewhite;text-align: center;display:block;">預計<br>6月開放</b>
-    <button onclick="go()" style="position: absolute;top:445px;left:209px;"><b>計算</b></button><br>
+    <!--技能核心-->
+    <span class="shape-ex5" style="position: absolute;top:0;left:8px;"></span><span class="shape-ex5" style="position: absolute;top:0;left:76px;"></span>
+    <span class="shape-ex5" style="position: absolute;top:59px;left:42px;"></span><span class="shape-ex5" style="position: absolute;top:59px;left:110px;"></span>
+    <span class="shape-ex5" style="position: absolute;top:118px;left:76px;"></span>
+    <!--精通核心-->
+    <span class="shape-ex5" style="position: absolute;top:0;left:378px;"></span>
+    <span class="shape-ex5" style="position: absolute;top:59px;left:276px;"></span>
+    <!--共通核心-->
+    <span class="shape-ex5" style="position: absolute;top:321px;left:276px;"></span><span class="shape-ex5" style="position: absolute;top:321px;left:344px;"></span>
+    <span class="shape-ex5" style="position: absolute;top:380px;left:378px;"></span>
+
+    <!--技能核心-->
+    <span class="shape-ex5" style="position: absolute;top:118px;left:144px;"></span>
+    <input id="skill1" style="position: absolute;top:144px;left:148px;width: 50px;text-align: center;" placeholder="請輸入" oninput="value=value.replace(/[^\d]/g,'')" inputmode="numeric">
+    <b id="skill1c" style="position: absolute;top:166px;left:152px;color:antiquewhite;width: 50px;text-align: center;"></b>
+    <!--精通核心-->
+    <span class="shape-ex5" style="position: absolute;top:118px;left:242px;"></span>
+    <input id="jinton1" style="position: absolute;top:144px;left:246px;width: 50px;text-align: center;" placeholder="請輸入" oninput="value=value.replace(/[^\d]/g,'')" inputmode="numeric">
+    <b id="jinton1c" style="position: absolute;top:166px;left:250px;color:antiquewhite;width: 50px;text-align: center;"></b>
+
+    <span class="shape-ex5" style="position: absolute;top:59px;left:344px;"></span>
+    <b id="jinton2" style="position: absolute;top:79px;left:281px;color:antiquewhite;text-align: center;display:block;">預計<br>6月開放</b>
+    <b id="jinton2c" style="position: absolute;top:91px;left:279px;color:antiquewhite;width: 64px;text-align: center;display:none;">2252碎片</b>
+    <!--強化核心-->
+    <span class="shape-ex5" style="position: absolute;top:262px;left:144px;"></span>
+    <input id="strong1" style="position: absolute;top:288px;left:148px;width: 50px;text-align: center;" placeholder="請輸入" oninput="value=value.replace(/[^\d]/g,'')" inputmode="numeric">
+    <b id="strong1c" style="position: absolute;top:310px;left:152px;color:antiquewhite;width: 50px;text-align: center;"></b>
+
+    <span class="shape-ex5" style="position: absolute;top:321px;left:110px;"></span>
+    <input id="strong2" style="position: absolute;top:347px;left:114px;width: 50px;text-align: center;" placeholder="請輸入" oninput="value=value.replace(/[^\d]/g,'')" inputmode="numeric">
+    <b id="strong2c" style="position: absolute;top:369px;left:118px;color:antiquewhite;width: 50px;text-align: center;"></b>
+
+    <span class="shape-ex5" style="position: absolute;top:321px;left:42px;"></span>
+    <input id="strong3" style="position: absolute;top:347px;left:46px;width: 50px;text-align: center;" placeholder="請輸入" oninput="value=value.replace(/[^\d]/g,'')" inputmode="numeric">
+    <b id="strong3c" style="position: absolute;top:369px;left:50px;color:antiquewhite;width: 50px;text-align: center;"></b>
+
+    <span class="shape-ex5" style="position: absolute;top:380px;left:8px;"></span>
+    <input id="strong4" style="position: absolute;top:406px;left:12px;width: 50px;text-align: center;" placeholder="請輸入" oninput="value=value.replace(/[^\d]/g,'')" inputmode="numeric">
+    <b id="strong4c" style="position: absolute;top:428px;left:16px;color:antiquewhite;width: 50px;text-align: center;"></b>
+    <!--共通核心-->
+    <span class="shape-ex5" style="position: absolute;top:262px;left:242px;"></span>
+    <b id="konton1" style="position: absolute;top:283px;left:246px;color:antiquewhite;text-align: center;display:block;">預計<br>6月開放</b>
+    <b id="konton1c" style="position: absolute;top:295px;left:244px;color:antiquewhite;width: 64px;text-align: center;display:none;">6268碎片</b>
+
+    <button onclick="go()" style="position: absolute;top:430px;left:170px;width:100px;height: 30px;"><b style="font-size: 18px;">計算</b></button><br>
     <b style="position: absolute;top:467px;left:52px;">碎片進度：</b>
     <progress max="20184" value="0" id="vvv" style="position: absolute;top:470px;left:132px;"></progress>
     <b id="ooo1" style="position: absolute;top:470px;left:347px;"></b><span id="ooo2"></span>
-    <b id="skill1c" style="position: absolute;top:170px;left:158px;color:antiquewhite;width: 50px;text-align: center;"></b>
-    <b id="jinton1c" style="position: absolute;top:170px;left:256px;color:antiquewhite;width: 50px;text-align: center;"></b>
-    <b id="jinton2c" style="position: absolute;top:95px;left:285px;color:antiquewhite;width: 64px;text-align: center;display:none;">2252碎片</b>
-    <b id="strong1c" style="position: absolute;top:314px;left:158px;color:antiquewhite;width: 50px;text-align: center;"></b>
-    <b id="strong2c" style="position: absolute;top:374px;left:123px;color:antiquewhite;width: 50px;text-align: center;"></b>
-    <b id="strong3c" style="position: absolute;top:374px;left:53px;color:antiquewhite;width: 50px;text-align: center;"></b>
-    <b id="strong4c" style="position: absolute;top:434px;left:18px;color:antiquewhite;width: 50px;text-align: center;"></b>
-    <b id="konton1c" style="position: absolute;top:300px;left:250px;color:antiquewhite;width: 64px;text-align: center;display:none;">6268碎片</b>
     <b style="position: absolute;top:487px;left:52px;">碎片總消耗量：</b><b id="all" style="position: absolute;top:487px;left:162px;"></b><br>
     <b style="position: absolute;top:507px;left:52px;">還需碎片數量：</b><b id="all2" style="position: absolute;top:507px;left:162px;"></b><br>
     <b style="position: absolute;top:527px;left:52px;">加上&ensp;共通I、精通II&ensp;還需碎片數量：</b><b id="no1"style="position: absolute;top:527px;left:309px;"></b>
-    <b id="no2" style="position: absolute;top:659px;left:312px;"></b>
-    <b style="position: absolute;top:185px;left:491px;color: antiquewhite;">使用說明</b>
-    <b style="position: absolute;top:213px;left:467px;background-color: black;color: antiquewhite;border-style:solid;border-radius: 5px;">&ensp;輸入技能等級&ensp;</b>
-    <b style="position: absolute;top:245px;left:460px;color: antiquewhite;">&ensp;滿等還需碎片數&ensp;</b>
+    <b id="no2" style="position: absolute;top:659px;left:332px;"></b>
+    
     <div id="hexa666" style="display: none;">
         <label>技能核心：等級</label><br>
         <label>消耗碎片數量：</label><span id="skill1b"></span><label><br>
@@ -58,6 +149,11 @@
         距離滿等還缺：</label><label>個碎片</label><br><br>
         
 </div>
+<span class="shape-ex6" style="position: absolute;top:600px;left:120px;"></span>
+<b style="position: absolute;top:615px;left:185px;color: antiquewhite;">使用說明</b>
+<b style="position: absolute;top:651px;left:135px;color: antiquewhite;">1.</b><b style="position: absolute;top:647px;left:155px;background-color: black;color: antiquewhite;border-style:solid;border-radius: 5px;">&ensp;輸入技能等級&ensp;0~30&ensp;</b>
+<b style="position: absolute;top:683px;left:135px;color: antiquewhite;">2.&ensp;按下</b><b style="position: absolute;top:680px;left:190px;background-color: black;color: antiquewhite;border-style:solid;border-radius: 5px;">&ensp;計算&ensp;</b>
+<b style="position: absolute;top:715px;left:140px;color: antiquewhite;">&ensp;顯示滿等還需碎片數&ensp;</b>
 
 
 <script src="script.js"></script>

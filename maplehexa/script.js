@@ -822,6 +822,5 @@ function go() {
     document.getElementById("konton1").style.display="none";
     document.getElementById("jinton2c").style.display="block";
     document.getElementById("konton1c").style.display="block";
-
     document.getElementById("no2").innerHTML = "惡魔品質製";
 }
